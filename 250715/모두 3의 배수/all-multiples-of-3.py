@@ -1,6 +1,6 @@
-arr = map(int,input().split())
 answer=1
-for i in arr:
+for _ in range(5):
+    i=int(input())
     if i%3!=0:
         answer=0
 print(answer)
