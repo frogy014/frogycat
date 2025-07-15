@@ -2,8 +2,8 @@ n = int(input())
 i=1
 while True:
     n//=i
-    print(n)
     if n<=1:
+        print(i)
         break
     i+=1
     
