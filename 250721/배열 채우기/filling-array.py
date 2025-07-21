@@ -1,13 +1,9 @@
 arr = input().split()
-if arr[len(arr)-1]=="0":
-    for i in arr[len(arr)-2::-1]:
-        if i=="0":
-            break
-        else:
-            print(i,end=" ")
-else:
-    for i in arr[::-1]:
-        if i=="0":
-            break
-        else:
-            print(i,end=" ")
+cnt=0
+for i in arr:
+    if i=="0":
+        break
+    else:
+        cnt+=1
+for i in arr[cnt-1::-1]:
+    print(i, end=" ")
