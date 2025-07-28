@@ -1,7 +1,7 @@
 a=input()
 n=int(input())
 if n>len(a):
-    for i in a:
+    for i in range(len(a)-1,-1,-1):
         print(i,end="")
 else:
     for i in range(len(a)-1,len(a)-1-n,-1):
