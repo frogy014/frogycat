@@ -2,8 +2,10 @@ a, b = map(int, input().split())
 
 # Please write your code here.
 def is369(i):
-    if i%3==0:
+    if i%3==0 and i!=0:
         return 1
+    else:
+        return 0
 def isone(i):
     if i//10==0:
         return is369(i)
