@@ -4,7 +4,7 @@ pattern = input()
 # Please write your code here.
 def inpattern():
     is_pattern=-1
-    for i in range(len(text)):
+    for i in range(len(text)-len(pattern)+1):
         if text[i]==pattern[0]:
             is_pattern=i
             for j in range(len(pattern)):
